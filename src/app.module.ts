@@ -12,6 +12,7 @@ import { VaccineModule } from './vaccine/vaccine.module';
       envFilePath: '.env',
     }),
     MongooseModule.forRoot(process.env.DB_URL, {
+      dbName: 'machineTest',
       useCreateIndex: true,
       useNewUrlParser: true,
       useUnifiedTopology: true,
